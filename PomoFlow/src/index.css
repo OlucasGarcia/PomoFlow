@@ -4,6 +4,15 @@
 }
 
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: 'Evil Empire', system-ui, -apple-system, sans-serif;
-  font-size: 32px;
+  background-color: #340379;
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }
