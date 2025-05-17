@@ -2,13 +2,12 @@
   font-family: 'Evil Empire';
   src: url('assets/Evil\ Empire.otf') format('OpenTyfe');
 }
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=New+Rocker&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Evil Empire', system-ui, -apple-system, sans-serif;
-  background-color: #340379;
 }
 
 html,
