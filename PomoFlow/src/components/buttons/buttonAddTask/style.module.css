@@ -1,0 +1,20 @@
+.btnAddTask {
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    border: 2px solid #FF147E;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btnAddTask>p {
+    text-align: center;
+}
+
+.btnAddTask:hover {  
+    background-color: #FF147E;
+}
