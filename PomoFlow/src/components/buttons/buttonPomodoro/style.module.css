@@ -1,0 +1,26 @@
+.btnPomodoro {
+    width: 120px;
+    padding: 5px;
+    margin: 7px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+    align-self: center;
+    cursor: pointer;
+    transition: .3s ease ;
+}
+
+.btnRosa {
+    background-color: #FF147E;
+    color: #FFF;
+}
+
+.btnBranco {
+    background-color: #E2D2F1;
+    color: #340379;
+}
+
+.btnPomodoro:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+}
