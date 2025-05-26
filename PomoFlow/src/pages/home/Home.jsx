@@ -13,17 +13,20 @@ function Home() {
     return (
         <section className={styles.mainDiv}>
             <div className={styles.lux}></div>
+
             <div className={styles.content}>
+
                 <h2>
                     {
-                    letras.map((letra, index) => (
-                        <span key={index} className={styles.letra}>{letra}</span>
-                    ))
-                }
+                        letras.map((letra, index) => (
+                            <span key={index} className={styles.letra}>{letra}</span>
+                        ))
+                    }
                 </h2>
                 <img src={PomoFlowLogo} alt="PomoFlow" />
                 <ButtonIniciar />
             </div>
+
             <div className={`${styles.lux} ${styles.luxBottom}`}></div>
         </section>
     )
