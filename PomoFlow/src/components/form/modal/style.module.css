@@ -1,0 +1,35 @@
+.divModal {
+    width: 500px;
+    height: 230px;
+    padding: 0 30px;
+    border-radius: 10px;
+    background-color: rgba(27, 24, 29, 0.99);
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.divModal>p {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #F0F0F0;
+    outline: none;
+    background-color: transparent;
+    color: #F0F0F0;
+    font-size: 20px;
+    font-family: "Belanosima", system-ui, -apple-system, sans-serif;
+    padding: 0 10px;
+}
+
+.divBtn {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
