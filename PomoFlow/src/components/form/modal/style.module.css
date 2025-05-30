@@ -16,7 +16,7 @@
     margin: 20px 0;
 }
 
-input {
+input[type="text"] {
     height: 30px;
     border: none;
     border-bottom: 1px solid #F0F0F0;
