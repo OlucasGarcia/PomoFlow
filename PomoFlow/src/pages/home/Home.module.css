@@ -3,7 +3,7 @@
 .mainDiv {
     background-color: #340379;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,96 +11,48 @@
     font-family: "Belanosima", system-ui, -apple-system, sans-serif;
 }
 
-.lux {
-    width: 30%;
-    height: 70%;
-    margin: -40% 0 0 0;
-    border-radius: 30% 70% 29% 71% / 30% 69% 31% 70%;
-    background: linear-gradient(90deg, rgba(31, 2, 71, 1) 0%, rgba(87, 20, 181, 1) 100%);
-    position: fixed;
-    filter: blur(30px) brightness(1.2);
-}
-
-.luxBottom {
-    margin: 40% 0 0 70%;
-    background: linear-gradient(90deg, rgba(87, 20, 181, 1) 0%, rgba(31, 2, 71, 1) 100%);
-    position: fixed;
-}
-
 .content {
     width: 90vw;
-    height: 85%;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: center;
     justify-content: center;
     border-radius: 30px;
-    background: linear-gradient(135deg, rgba(27, 24, 29, .1) 0%, rgba(27, 24, 29, .8) 50%, rgba(0, 0, 0, .1) 100%);
+    background: linear-gradient(135deg, rgba(27, 24, 29, .1) 0%, rgba(27, 24, 29, .4) 50%, rgba(0, 0, 0, .1) 100%);
     position: relative;
     z-index: 1;
 }
 
-h2 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 500;
-    white-space: pre-wrap;
-    cursor: default;
-
-    animation: fade .8s ease-in;
+.contentFull {
+    margin: 40px 0;
+    height: auto;
+    justify-content: flex-start;
 }
 
-.letra {
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
+.welcome {
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.letra:hover {
-    color: #0ff;
-    animation: jump 0.4s ease;
+.pomoflow {
+    height: 200vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .8s ease;
 }
 
-img {
-    width: 60%;
-    animation: fade .8s ease-in;
-}
-
-dialog {
-    justify-self: center;
-    align-self: center;
-    color: #F0F0F0;
-    border: none;
-    background-color: transparent;
-    transition: .5s ease;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translateY(60px);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@keyframes jump {
-    0% {
-        transform: translateY(0);
-    }
-
-    30% {
-        transform: translateY(-8px);
-    }
-
-    60% {
-        transform: translateY(4px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
