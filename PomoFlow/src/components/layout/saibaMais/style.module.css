@@ -1,0 +1,74 @@
+.saibamais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.txt {
+    width: 900px;
+    text-align: justify;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.txt>p {
+    font-size: 20px;
+    padding: 30px;
+}
+
+.pomo {
+    font-family: 'Evil Empire';
+}
+
+.txtPink {
+    color: #FF147E;
+}
+
+
+
+.txtLink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+dialog {
+    justify-self: center;
+    align-self: center;
+    color: #F0F0F0;
+    border: none;
+    background-color: transparent;
+    transition: .5s ease;
+}
+
+.pomodoro {
+    width: 700px;
+    height: 330px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    background-color: rgba(27, 24, 29, 0.95);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.divCards {
+    margin: 30px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 70px;
+}
