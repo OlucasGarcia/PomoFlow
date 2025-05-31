@@ -1,0 +1,47 @@
+
+.btnDiv {
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.timer>p {
+    font-family: 'Evil Empire';
+    font-size: 200px;
+    padding-left: 15px;
+}
+
+.timer>progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress[value] {
+    width: 375px;
+    height: 10px;
+    margin-bottom: 30px;
+    transition: all .4s ease;
+}
+
+progress[value]::-webkit-progress-bar {
+    border-radius: 30px;
+    background: #F0F0F0;
+}
+
+progress[value]::-webkit-progress-value {
+    border-radius: 30px;
+    background: #FF147E;
+}
+
+progress[value]:hover {
+    transform: scale(1.1);
+}

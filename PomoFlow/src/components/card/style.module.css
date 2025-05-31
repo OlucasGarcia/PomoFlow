@@ -1,0 +1,49 @@
+.card {
+    width: 320px;
+    height: min-content;
+
+}
+
+.imgZoom {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.imgCard {
+    width: 320px;
+    height: 320px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: 0px -55px;
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.shadow {
+    width: 320px;
+    height: 60px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: linear-gradient(180deg, #0d01151a 0%, #0d0115e6 50%, #0d0115 100%);
+    position: relative;
+    top: 260px;
+}
+
+.title {
+    font-size: 22px;
+    text-align: center;
+    top: 225px;
+    position: relative;
+}
+
+.desc {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.imgZoom:hover .imgCard {
+    transform: scale(1.1);
+}

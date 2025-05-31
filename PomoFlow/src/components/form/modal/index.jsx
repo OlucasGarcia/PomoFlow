@@ -6,7 +6,7 @@ function Modal(props) {
     return (
         <div id='modal' className={styles.divModal}>
             <p>Nova Tarefa</p>
-            <input id="tarefaInput" required maxLength={35} placeholder='Descreva sua tarefa'/>
+            <input type='text' id="tarefaInput" required maxLength={35} placeholder='Descreva sua tarefa'/>
             <div className={styles.divBtn}>
                 <ButtonPomodoro
                     onClick={()=>{document.getElementById('modal').close()}}
