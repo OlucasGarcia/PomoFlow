@@ -2,37 +2,57 @@ import styles from './style.module.css'
 
 import ButtonPomodoro from '../../buttons/buttonPomodoro'
 
+import usePomodoro from '../../../hooks/usePomodoro';
+
 function Pomoflow() {
+
+    const {
+        tempoFormatado,
+        iniciar,
+        pausar,
+        reiniciar,
+        definirTempoPorModo,
+        modoAtual,
+        progresso,
+    } = usePomodoro();
+
     return (
         <div className={styles.pomoflow}>
             <div className={styles.btnDiv}>
-                <ButtonPomodoro 
-                text='PAUSA CURTA'
-                cor='roxo'
+                <ButtonPomodoro
+                    text='PAUSA CURTA'
+                    cor={modoAtual === 'pausaCurta' ? '' : 'roxo'}
+                    onClick={() => definirTempoPorModo('pausaCurta')}
                 />
-                <ButtonPomodoro 
-                text='POMODORO'
+                <ButtonPomodoro
+                    text='POMODORO'
+                    cor={modoAtual === 'pomodoro' ? '' : 'roxo'}
+                    onClick={() => definirTempoPorModo('pomodoro')}
                 />
-                <ButtonPomodoro 
-                text='PAUSA LONGA'
-                cor='roxo'
+                <ButtonPomodoro
+                    text='PAUSA LONGA'
+                    cor={modoAtual === 'pausaLonga' ? '' : 'roxo'}
+                    onClick={() => definirTempoPorModo('pausaLonga')}
                 />
             </div>
             <div className={styles.timer}>
-                <p>25:00</p>
-                <progress value={75} max={100}></progress>
+                <p>{tempoFormatado()}</p>
+                <progress value={progresso()} max={100}></progress>
             </div>
             <div className={styles.btnDiv}>
-                <ButtonPomodoro 
-                text='PAUSAR'
-                cor='roxo'
+                <ButtonPomodoro
+                    text='PAUSAR'
+                    cor='roxo'
+                    onClick={pausar}
                 />
-                <ButtonPomodoro 
-                text='INICIAR'
+                <ButtonPomodoro
+                    text='INICIAR'
+                    onClick={iniciar}
                 />
-                <ButtonPomodoro 
-                text='REINICIAR'
-                cor='roxo'
+                <ButtonPomodoro
+                    text='REINICIAR'
+                    cor='roxo'
+                    onClick={reiniciar}
                 />
             </div>
         </div>
