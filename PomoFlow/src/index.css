@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=New+Rocker&display=swap');
+
 @font-face {
   font-family: 'Evil Empire';
   src: url('assets/Evil\ Empire.otf') format('OpenTyfe');
@@ -13,4 +15,8 @@ html,
 body,
 #root {
   height: 100%;
+}
+
+.Belanosima {
+  font-family: "Belanosima", sans-serif;
 }
