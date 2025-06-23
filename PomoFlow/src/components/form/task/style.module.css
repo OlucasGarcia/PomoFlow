@@ -33,6 +33,11 @@ input[type="checkbox"]:checked::before {
     font-size: 18px;
 }
 
+.done {
+    text-decoration: line-through;
+    filter: brightness(.5);
+}
+
 .task>button {
     border: none;
     background: transparent;
@@ -42,10 +47,9 @@ input[type="checkbox"]:checked::before {
 
 button>img {
     width: 20px;
-    transition: .3s ease;
+    transition: transform .3s ease;
 }
 
 button>img:hover {
-    filter: brightness(1.5);
     transform: scale(1.2);
 }
