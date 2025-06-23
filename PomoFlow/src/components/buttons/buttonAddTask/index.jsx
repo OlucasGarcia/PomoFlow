@@ -3,7 +3,7 @@ import { IoMdAddCircle } from "react-icons/io";
 
 function ButtonAddTask(props) {
     return(
-        <div className={styles.btnAddTask} onClick={()=>{document.getElementById('modal').showModal()}}>
+        <div className={styles.btnAddTask} onClick={()=>{document.getElementById('modal').showModal()}} tabIndex="0">
             <IoMdAddCircle size={20} color='#F0F0F0'/>
             <p>Adicionar tarefa</p>
         </div>
