@@ -28,4 +28,15 @@
 .btnDiv>a {
     color: inherit;
     text-decoration: none;
+    transition: all .3s ease;
+}
+
+a:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+a:active {
+    transform: scale(0.95);
+    filter: brightness(.8);
 }
