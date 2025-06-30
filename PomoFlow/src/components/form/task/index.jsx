@@ -10,7 +10,7 @@ function Task(props) {
             </p>
             <button 
             onClick={props.onClick}>
-                <img src={PencilIcon} alt="Editar Task" />
+            <img className={styles.editIcon} src={PencilIcon} alt="Editar Task" />
             </button>
         </div>
     )
