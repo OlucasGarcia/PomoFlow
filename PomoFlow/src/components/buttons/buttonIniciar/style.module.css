@@ -11,7 +11,6 @@
     color: #F0F0F0;
     box-shadow: 4px 4px 8px rgba(226, 210, 241, .5);
     cursor: pointer;
-    opacity: 0;
     animation: fade .8s ease-in forwards;
     animation-delay: .4s;
     transition: box-shadow 0.5s ease, 

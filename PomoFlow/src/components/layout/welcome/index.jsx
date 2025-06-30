@@ -17,7 +17,7 @@ function Welcome(props) {
                         ))
                     }
                 </h2>
-                <img src={PomoFlowLogo} alt="PomoFlow" />
+                <img className={styles.logo} src={PomoFlowLogo} alt="PomoFlow" />
                 <ButtonIniciar 
                 onClick={props.onClick}
                 />

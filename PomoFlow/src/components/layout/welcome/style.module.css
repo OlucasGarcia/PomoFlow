@@ -17,7 +17,7 @@ h2 {
     animation: jump 0.4s ease;
 }
 
-img {
+.logo {
     width: 60%;
     animation: fade .8s ease-in;
 }

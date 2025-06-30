@@ -18,3 +18,8 @@
 .btnAddTask:hover {  
     background-color: #FF147E;
 }
+
+.btnAddTask:active {
+    filter: brightness(0.8);
+    transform: scale(0.97);
+}
