@@ -1,7 +1,6 @@
 .card {
     width: 320px;
     height: min-content;
-
 }
 
 .imgZoom {
@@ -46,4 +45,57 @@
 
 .imgZoom:hover .imgCard {
     transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 280px;
+    }
+
+    .imgZoom {
+        width: 280px;
+        height: 280px;
+
+    }
+
+    .imgCard {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .title {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+}
+
+@media ((max-width: 768px) and (min-width: 600px)) {
+    .card {
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .imgZoom {
+        min-width: 240px;
+        height: 240px;
+    }
+
+    .imgCard {
+        min-width: 240px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+    }
 }
