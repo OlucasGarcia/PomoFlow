@@ -52,3 +52,26 @@ h2 {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 350px;
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 270px;
+        margin: 15px 0;
+    }
+}

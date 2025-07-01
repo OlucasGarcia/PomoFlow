@@ -1,4 +1,3 @@
-
 .btnDiv {
     display: flex;
     padding: 0 10px;
@@ -44,4 +43,26 @@ progress[value]::-webkit-progress-value {
 
 progress[value]:hover {
     transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+    .timer>p {
+        font-size: 150px;
+    }
+
+    progress[value] {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .timer>p {
+        font-size: 130px;
+    }
+
+    progress[value] {
+        width: 250px;
+    }
 }
