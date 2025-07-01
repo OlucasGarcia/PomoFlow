@@ -1,7 +1,7 @@
 # PomoFlow
 
 ## 📌 **Objetivos do projeto**
-O **Pomoflow** é uma aplicação web baseada na técnica Pomodoro, criada para auxiliar usuários na organização de seus estudos ou tarefas por meio de sessões cronometradas, com feedbacks visuais, sonoros e funcionalidades como criação de tarefas e visualização de progresso. O projeto tem como foco o aprendizado de boas práticas em React, arquitetura de micro front-ends, uso do localStorage e experiência do usuário.
+O **Pomoflow** é uma aplicação web baseada na técnica Pomodoro, criada para auxiliar usuários na organização de seus estudos ou tarefas por meio de sessões cronometradas, com feedbacks visuais, sonoros e funcionalidades como criação de tarefas e visualização de progresso. O projeto tem como foco o aprendizado de boas práticas em React, uso do localStorage e experiência do usuário.
 
 ---
 
