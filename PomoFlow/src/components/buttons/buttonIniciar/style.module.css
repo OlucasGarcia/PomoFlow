@@ -12,10 +12,9 @@
     box-shadow: 4px 4px 8px rgba(226, 210, 241, .5);
     cursor: pointer;
     animation: fade .8s ease-in forwards;
-    animation-delay: .4s;
-    transition: box-shadow 0.5s ease, 
-                transform 0.5s ease, 
-                background-position 2.5s ease;
+    transition: box-shadow 0.5s ease,
+        transform 0.5s ease,
+        background-position 2.5s ease;
 }
 
 .btnIniciar:hover {
@@ -45,5 +44,15 @@
     to {
         opacity: 1;
         transform: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .btnIniciar {
+        width: 130px;
+    }
+    .btnIniciar>p {
+        font-size: 20px;
     }
 }

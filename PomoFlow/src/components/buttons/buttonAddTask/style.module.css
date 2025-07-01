@@ -15,11 +15,23 @@
     text-align: center;
 }
 
-.btnAddTask:hover {  
+.btnAddTask:hover {
     background-color: #FF147E;
 }
 
 .btnAddTask:active {
     filter: brightness(0.8);
     transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+    .btnAddTask {
+        width: 310px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btnAddTask {
+        width: 260px;
+    }
 }

@@ -6,7 +6,7 @@
     text-align: center;
     align-self: center;
     cursor: pointer;
-    transition: .2s ease ;
+    transition: .2s ease;
 }
 
 .btnRosa {
@@ -27,4 +27,22 @@
 .btnPomodoro:active {
     filter: brightness(0.8);
     transform: scale(0.97);
+}
+
+
+@media (max-width: 600px) {
+    .btnPomodoro {
+        width: 110px;
+        padding: 7px;
+        margin: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btnPomodoro {
+        width: 105px;
+        padding: 9px 0;
+        margin: 3px;
+    }
 }
