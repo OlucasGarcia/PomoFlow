@@ -24,7 +24,7 @@ h3 {
 }
 
 .pomo {
-    font-family: 'Evil Empire';
+    font-family: 'Evil Empire', "Belanosima";
 }
 
 .txtPink {
@@ -45,8 +45,8 @@ dialog {
 }
 
 .pomodoro {
-    width: 700px;
-    height: 330px;
+    max-width: 700px;
+    min-height: 330px;
     padding: 5px 30px;
     border-radius: 10px;
     background-color: rgba(27, 24, 29, 0.95);
@@ -88,5 +88,17 @@ dialog {
 @media (max-width: 600px) {
     .txt>p {
         font-size: 18px;
+    }
+    .pomodoro {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 20px;
+    }
+    .pomodoro {
+        font-size: 16px;
     }
 }
