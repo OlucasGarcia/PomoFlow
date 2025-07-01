@@ -25,17 +25,18 @@ function useTarefas() {
         };
         setTarefas(prev => [...prev, novaTarefa]);
 
-            Swal.fire({
-                title: '✅ Tarefa Adicionada!',
-                icon: 'success',
-                confirmButtonText: 'OK',
-                background: '#1b181d',
-                color: '#F0F0F0',
-                confirmButtonColor: '#FF147E',
-                customClass: {
-                    popup: 'Belanosima'
-                }
-            })
+        Swal.fire({
+            title: '✅ Tarefa Adicionada!',
+            icon: 'success',
+            scrollbarPadding: false,
+            confirmButtonText: 'OK',
+            background: '#1b181d',
+            color: '#F0F0F0',
+            confirmButtonColor: '#FF147E',
+            customClass: {
+                popup: 'Belanosima'
+            }
+        })
     };
 
 

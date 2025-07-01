@@ -23,6 +23,7 @@ function ModalEditor({ tarefa, editarTarefa, removerTarefa }) {
                 title: 'Nenhuma alteração feita!',
                 text: 'Você precisa alterar a tarefa antes de salvar.',
                 icon: 'warning',
+                scrollbarPadding: false,
                 confirmButtonColor: '#FF147E',
                 background: '#1b181d',
                 color: '#F0F0F0',
@@ -38,12 +39,13 @@ function ModalEditor({ tarefa, editarTarefa, removerTarefa }) {
             title: 'Tarefa Atualizada!',
             text: 'Sua tarefa foi editada com sucesso.',
             icon: 'success',
+            scrollbarPadding: false,
             confirmButtonColor: '#FF147E',
             background: '#1b181d',
             color: '#F0F0F0',
             customClass: {
-                    popup: 'Belanosima'
-                }
+                popup: 'Belanosima'
+            }
         });
         document.getElementById('modalEdit').close();
     };
@@ -53,6 +55,7 @@ function ModalEditor({ tarefa, editarTarefa, removerTarefa }) {
             title: 'Tem certeza?',
             text: 'Você não poderá reverter isso!',
             icon: 'warning',
+            scrollbarPadding: false,
             showCancelButton: true,
             confirmButtonColor: '#FF147E',
             cancelButtonColor: '#6c757d',
@@ -61,8 +64,8 @@ function ModalEditor({ tarefa, editarTarefa, removerTarefa }) {
             background: '#1b181d',
             color: '#F0F0F0',
             customClass: {
-                    popup: 'Belanosima'
-                }
+                popup: 'Belanosima'
+            }
         }).then((result) => {
             if (result.isConfirmed) {
                 removerTarefa(tarefa.id);
@@ -70,12 +73,13 @@ function ModalEditor({ tarefa, editarTarefa, removerTarefa }) {
                     title: 'Excluído!',
                     text: 'Sua tarefa foi removida.',
                     icon: 'success',
+                    scrollbarPadding: false,
                     confirmButtonColor: '#FF147E',
                     background: '#1b181d',
                     color: '#F0F0F0',
                     customClass: {
-                    popup: 'Belanosima'
-                }
+                        popup: 'Belanosima'
+                    }
                 });
                 document.getElementById('modalEdit').close();
             }
