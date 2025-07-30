@@ -7,11 +7,13 @@ function modalCreater({ adicionarTarefa }) {
 
     const [desc, setDesc] = useState('');
 
+    const closeModal = () => {document.getElementById('modal').close()}
+
     const handleAdicionar = () => {
         if (!desc.trim()) return;
         adicionarTarefa(desc);
         setDesc('');
-        document.getElementById('modal').close();
+        closeModal();
     }
 
 
@@ -31,11 +33,13 @@ function modalCreater({ adicionarTarefa }) {
 
             <div className={styles.divBtn}>
                 <ButtonPomodoro
-                    onClick={() => { document.getElementById('modal').close() }}
+                    onClick={closeModal}
+                    onKeyDown={(e) => e.key === 'Enter' && closeModal()}
                     text="CANCELAR"
                     cor="roxo" />
                 <ButtonPomodoro
                     onClick={handleAdicionar}
+                    onKeyDown={(e) => e.key === 'Enter' && handleAdicionar()}
                     text="ADICIONAR" />
             </div>
         </div>

@@ -16,6 +16,8 @@ function ModalEditor({ tarefa, editarTarefa, removerTarefa }) {
 
     if (!tarefa) return null;
 
+    const closeModal = () => { document.getElementById('modalEdit').close() }
+
     const handleSalvar = () => {
 
         if (desc.trim() === tarefa.desc) {
@@ -101,17 +103,26 @@ function ModalEditor({ tarefa, editarTarefa, removerTarefa }) {
             />
             <div className={styles.divBtn}>
                 <ButtonPomodoro
-                    onClick={() => { document.getElementById('modalEdit').close() }}
+                    onClick={closeModal}
+                    onKeyDown={(e) => {if (e.key === 'Enter') {
+                        e.preventDefault();
+                        closeModal();
+                    }}}
                     text="CANCELAR"
                     cor="roxo" />
                 <ButtonPomodoro
                     text="SALVAR"
                     onClick={handleSalvar}
+                    onKeyDown={(e) => {if (e.key === 'Enter') {
+                        e.preventDefault();
+                        handleSalvar();
+                    }}}
                 />
                 <ButtonPomodoro
                     text="EXCLUIR"
                     cor="roxo"
                     onClick={handleExcluir}
+                    onKeyDown={(e) => e.key === 'Enter' && handleExcluir()}
                 />
             </div>
         </div>
