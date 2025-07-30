@@ -23,16 +23,19 @@ function Pomoflow() {
                     text='PAUSA CURTA'
                     cor={modoAtual === 'pausaCurta' ? '' : 'roxo'}
                     onClick={() => definirTempoPorModo('pausaCurta')}
+                    onKeyDown={(e) => e.key === 'Enter' && definirTempoPorModo('pausaCurta')}
                 />
                 <ButtonPomodoro
                     text='POMODORO'
                     cor={modoAtual === 'pomodoro' ? '' : 'roxo'}
                     onClick={() => definirTempoPorModo('pomodoro')}
+                    onKeyDown={(e) => e.key === 'Enter' && definirTempoPorModo('pomodoro')}
                 />
                 <ButtonPomodoro
                     text='PAUSA LONGA'
                     cor={modoAtual === 'pausaLonga' ? '' : 'roxo'}
                     onClick={() => definirTempoPorModo('pausaLonga')}
+                    onKeyDown={(e) => e.key === 'Enter' && definirTempoPorModo('pausaLonga')}
                 />
             </div>
             <div className={styles.timer}>
@@ -44,15 +47,18 @@ function Pomoflow() {
                     text='PAUSAR'
                     cor='roxo'
                     onClick={pausar}
+                    onKeyDown={(e) => e.key === 'Enter' && pausar()}
                 />
                 <ButtonPomodoro
                     text='INICIAR'
                     onClick={iniciar}
+                    onKeyDown={(e) => e.key === 'Enter' && iniciar()}
                 />
                 <ButtonPomodoro
                     text='REINICIAR'
                     cor='roxo'
                     onClick={reiniciar}
+                    onKeyDown={(e) => e.key === 'Enter' && reiniciar()}
                 />
             </div>
         </div>

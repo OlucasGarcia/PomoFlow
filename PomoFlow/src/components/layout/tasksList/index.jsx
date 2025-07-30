@@ -34,6 +34,7 @@ function TasksList() {
                         desc={tarefa.desc}
                         concluida={tarefa.concluida}
                         onChange={() => { alternarConclusao(tarefa.id) }}
+                        onKeyDown={(e) => e.key === 'Enter' && alternarConclusao(tarefa.id)}
                         onClick={() => {
                             setTarefaSelecionada(tarefa);
                             document.getElementById('modalEdit').show();

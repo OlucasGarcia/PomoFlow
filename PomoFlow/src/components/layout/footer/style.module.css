@@ -31,7 +31,7 @@
     transition: all .3s ease;
 }
 
-a:hover {
+a:hover, a:focus {
     transform: scale(1.2);
     filter: brightness(1.2);
 }

@@ -27,6 +27,7 @@ function SaibaMais() {
                     <ButtonPomodoro
                         text="OK"
                         onClick={() => { document.getElementById("pomodoro").close() }}
+                        onKeyDown={(e) => e.key === 'Enter' && document.getElementById("pomodoro").close()}
                     />
 
                 </div>
