@@ -4,7 +4,7 @@ function Card(props) {
 
 
     return (
-        <div className={styles.card}>
+        <div className={styles.card} tabIndex={0}>
             <div className={styles.imgZoom}>
                 <img className={styles.imgCard} src={props.img} alt="" />
                 <div className={styles.shadow}></div>
