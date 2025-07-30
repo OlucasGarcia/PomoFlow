@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-.btnAddTask:hover {
+.btnAddTask:hover, .btnAddTask:focus {
     background-color: #FF147E;
 }
 

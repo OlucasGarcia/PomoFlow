@@ -17,7 +17,7 @@
         background-position 2.5s ease;
 }
 
-.btnIniciar:hover {
+.btnIniciar:hover, .btnIniciar:focus {
     background-position: 100% 50%;
     box-shadow:
         0 0 5px #0ff,

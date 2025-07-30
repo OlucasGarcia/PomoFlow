@@ -19,7 +19,7 @@
     color: #340379;
 }
 
-.btnPomodoro:hover {
+.btnPomodoro:hover, .btnPomodoro:focus {
     transform: scale(1.1);
     border-radius: 5px;
 }
